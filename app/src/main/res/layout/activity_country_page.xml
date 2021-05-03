@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CountryPage">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03125" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h96"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.96875" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.34375" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65625" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8125" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1875" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline_h50"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/vietnam_bg_boats"
+        android:scaleType="centerCrop"/>
+
+
+    <LinearLayout
+        android:id="@+id/title_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="left"
+        app:layout_constraintTop_toBottomOf="@id/guideline_h03"
+        app:layout_constraintStart_toStartOf="@id/guideline_v05"
+        app:layout_constraintEnd_toEndOf="@id/guideline_v95">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_black"
+            android:textSize="72sp"
+            android:text="Viet Nam"
+            android:textColor="@color/primary_red"
+            android:layout_marginBottom="-7.5dp"/>
+
+        <TextView
+            android:id="@+id/sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Impact of COVID-19 on Mobility and Provincial Economic Activity"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/text_body"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@id/guideline_v95"
+        app:layout_constraintStart_toStartOf="@id/guideline_v05"
+        app:layout_constraintTop_toBottomOf="@id/title_container"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_h96">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewOne"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="@color/primary_yellow"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/cardOneTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Case &amp; Death Count"
+                    android:textColor="@color/text_body"
+                    android:textSize="24dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:padding="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/cardOneDescription"/>
+
+                <ImageView
+                    android:id="@+id/cardOneArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow"
+                    android:padding="5dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/cardOneTitle"
+                    app:layout_constraintBottom_toTopOf="@id/cardOneDescription"/>
+
+                <TextView
+                    android:id="@+id/cardOneDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/text_body"
+                    android:text="Due to the government's quick and targeted response to the pandemic, Viet Nam has been relatively successful at containing the pandemic with a low case and death count."
+                    app:layout_constraintTop_toBottomOf="@id/cardOneTitle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewTwo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/primary_green"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:layout_constraintTop_toBottomOf="@id/cardViewOne"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/cardTwoTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Google Mobility Trends"
+                    android:textColor="@color/text_body"
+                    android:textSize="24dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:padding="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/cardTwoDescription"/>
+
+                <ImageView
+                    android:id="@+id/cardTwoArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow"
+                    android:padding="5dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/cardTwoTitle"
+                    app:layout_constraintBottom_toTopOf="@id/cardTwoDescription"/>
+
+                <TextView
+                    android:id="@+id/cardTwoDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/text_body"
+                    android:text="A measure of mobility using mobile phone data and anonymized user location to see impacts of COVID-19 on regional mobility patterns."
+                    app:layout_constraintTop_toBottomOf="@id/cardTwoTitle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewThree"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/primary_red"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:layout_constraintTop_toBottomOf="@id/cardViewTwo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/cardThreeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Export Estimation"
+                    android:textColor="@color/text_body"
+                    android:textSize="24dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:padding="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/cardThreeDescription"/>
+
+                <ImageView
+                    android:id="@+id/cardThreeArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow"
+                    android:padding="5dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/cardThreeTitle"
+                    app:layout_constraintBottom_toTopOf="@id/cardThreeDescription"/>
+
+                <TextView
+                    android:id="@+id/cardThreeDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/text_body"
+                    android:text="Using Google Mobility Data to estimate provincial-level exports from February 2020 to March 2021."
+                    app:layout_constraintTop_toBottomOf="@id/cardThreeTitle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewFour"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/primary_blue"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:layout_constraintTop_toBottomOf="@id/cardViewThree"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/cardFourTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FDI Estimation"
+                    android:textColor="@color/text_body"
+                    android:textSize="24dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:padding="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/cardFourDescription"/>
+
+                <ImageView
+                    android:id="@+id/cardFourArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow"
+                    android:padding="5dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/cardFourTitle"
+                    app:layout_constraintBottom_toTopOf="@id/cardFourDescription"/>
+
+                <TextView
+                    android:id="@+id/cardFourDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/text_body"
+                    android:text="Using Google Mobility Data to estimate provincial-level foreign direct investment inflows from February 2020 to March 2021."
+                    app:layout_constraintTop_toBottomOf="@id/cardFourTitle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

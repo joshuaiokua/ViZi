@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="year_values.xml">
+        <item>2020-02</item>
+        <item>2020-03</item>
+        <item>2020-04</item>
+        <item>2020-05</item>
+        <item>2020-06</item>
+        <item>2020-07</item>
+        <item>2020-08</item>
+        <item>2020-09</item>
+        <item>2020-10</item>
+        <item>2020-11</item>
+        <item>2020-12</item>
+        <item>2021-01</item>
+        <item>2021-02</item>
+        <item>2021-03</item>
+    </string-array>
+</resources>

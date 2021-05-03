@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CaseDeathCount">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03125" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h96"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.96875" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.34375" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65625" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8125" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1875" />
+
+    <!--  Title  -->
+    <LinearLayout
+        android:id="@+id/title_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="left"
+        app:layout_constraintTop_toBottomOf="@id/guideline_h03"
+        app:layout_constraintStart_toStartOf="@id/guideline_v05"
+        app:layout_constraintEnd_toEndOf="@id/guideline_v95">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Viet Nam"
+            android:fontFamily="@font/roboto_black"
+            android:textColor="@color/primary_red"
+            android:textSize="48sp"
+            android:layout_marginBottom="-7.5dp"/>
+
+        <TextView
+            android:id="@+id/sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COVID-19 Overview"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/text_body"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+
+    <!--  Text Block One  -->
+    <TextView
+        android:id="@+id/text_block_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/chart_container_1"
+        app:layout_constraintTop_toBottomOf="@id/title_container"
+        app:layout_constraintStart_toStartOf="@id/guideline_v05"
+        app:layout_constraintEnd_toEndOf="@id/guideline_v95"
+        />
+
+    <!--  Charts & Graphs  -->
+    <LinearLayout
+        android:id="@+id/chart_container_1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/chart_container_2"
+        app:layout_constraintTop_toBottomOf="@id/text_block_one">
+
+        <com.anychart.AnyChartView
+            android:id="@+id/any_chart_view_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chart_container_2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/chart_container_1">
+
+
+        <com.anychart.AnyChartView
+            android:id="@+id/any_chart_view_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

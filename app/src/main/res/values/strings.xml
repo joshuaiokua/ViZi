@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ViZi</string>
+
+    <!--  Primary Strings   -->
+    <string name="logo">ViZi</string>
+
+    <!--  Login Screen   -->
+    <string name="login_description">Visualizations &amp; Mobile Stories</string>
+    <string name="title_activity_tabbed_gdp">TabbedActivityGdp</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <!-- Sub Title Strings -->
+    <string name="temp_sub_title">Temporary Subtitle</string>
+    <string name="mobility">COVID-19 Google Mobility Trends</string>
+    <string name="export_estimation">Monthly Export Estimates</string>
+    <string name="fdi_estimation">Monthly FDI Estimates</string>
+
+</resources>
